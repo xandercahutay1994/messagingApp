@@ -10,6 +10,7 @@ function Login(props) {
 
   useEffect(() => {
     document.title = 'Login'
+    
     // return () => {
     //   effect
     // };
@@ -17,13 +18,12 @@ function Login(props) {
 
   return (
     <div className='container justify-content-center mt-5'>
-      <h3 className='mt-3'> LOGIN </h3>
+      <h3 className='mt-3 text-center'> LOGIN </h3>
       <div className='mt-5'>
         <div className="form-group">
           <label>Username</label>
           <CTextField 
             name='username'
-            label='Username'
             className='form-control'
           />
         </div>
@@ -32,7 +32,6 @@ function Login(props) {
           <CTextField 
             type='password'
             name='password'
-            label='Password'
             className='form-control'
           />
         </div>
